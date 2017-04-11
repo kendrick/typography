@@ -1,7 +1,10 @@
+@import 'normalize';
+@import 'box-sizing';
 @import 'fonts/fonts';
 
 html,
 body {
+  height: 100%;
   font-family: 'Work Sans', serif;
 }
 
@@ -12,4 +15,22 @@ h4,
 h5,
 h6 {
   font-weight: 300;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  &:first-of-type {
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &:last-of-type {
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
