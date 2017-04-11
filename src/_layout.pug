@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block vars
+    block title
+      title #{title}
+    block styles
+      link(rel='stylesheet', href='styles/styles.min.css')
+
+  body
+    block content
+
+    script(src='https://code.jquery.com/jquery-2.2.4.min.js')
